@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProgrammingLanguageStructure.iml" filepath="$PROJECT_DIR$/ProgrammingLanguageStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap01_introduction/chap01_introduction.iml" filepath="$PROJECT_DIR$/Chapters/chap01_introduction/chap01_introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap02_grammar/chap02_grammar.iml" filepath="$PROJECT_DIR$/Chapters/chap02_grammar/chap02_grammar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap03_parsing/chap03_parsing.iml" filepath="$PROJECT_DIR$/Chapters/chap03_parsing/chap03_parsing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap04_variable/chap04_variable.iml" filepath="$PROJECT_DIR$/Chapters/chap04_variable/chap04_variable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap05_semantics/chap05_semantics.iml" filepath="$PROJECT_DIR$/Chapters/chap05_semantics/chap05_semantics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap06_type/chap06_type.iml" filepath="$PROJECT_DIR$/Chapters/chap06_type/chap06_type.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap07_type_system/chap07_type_system.iml" filepath="$PROJECT_DIR$/Chapters/chap07_type_system/chap07_type_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap08_function/chap08_function.iml" filepath="$PROJECT_DIR$/Chapters/chap08_function/chap08_function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap09_function_implementation/chap09_function_implementation.iml" filepath="$PROJECT_DIR$/Chapters/chap09_function_implementation/chap09_function_implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap10_exception/chap10_exception.iml" filepath="$PROJECT_DIR$/Chapters/chap10_exception/chap10_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap11_object/chap11_object.iml" filepath="$PROJECT_DIR$/Chapters/chap11_object/chap11_object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap12_inheritance/chap12_inheritance.iml" filepath="$PROJECT_DIR$/Chapters/chap12_inheritance/chap12_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapters/chap13_functional_language/chap13_functional_language.iml" filepath="$PROJECT_DIR$/Chapters/chap13_functional_language/chap13_functional_language.iml" />
+    </modules>
+  </component>
+</project>
