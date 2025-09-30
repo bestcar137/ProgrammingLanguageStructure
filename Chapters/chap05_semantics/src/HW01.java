@@ -10,35 +10,70 @@ public class HW01 {
     // ===== [TODO 1] print: 그대로 출력 =====
     public void print(String msg) {
         // msg를 출력하는 구문 작성
+        System.out.print(msg);
     }
 
     // ===== [TODO 2] assign: 문자열 타입명으로 강제 변환 후 반환 =====
     // typeName: "int" | "float" | "string" | "bool" (대소문자 무시)
     public Object assign(String typeName, String raw) {
-        // TODO:
         // 1) typeName을 소문자로 정리
+        String t = (typeName == null) ? "" : typeName.trim().toLowerCase();
         // 2) raw(문자열)에서 공백 제거
-        // 3) switch 또는 if로 분기하여 각 타입으로 변환
-        //    - "int"   -> Integer.parseInt(v)
-        //    - "float" -> Double.parseDouble(v)
-        //    - "string"-> v
-        //    - "bool"/"boolean" -> Boolean.parseBoolean(v)
-        // 4) 실패/미지원 타입은 에러 메시지 출력 후 null 반환
-        return null;
+        String v = (raw == null) ? "" : raw.trim();
+
+        try {
+            // 3) switch 또는 if로 분기하여 각 타입으로 변환
+            switch (t) {
+                case "int":
+                    return Integer.parseInt(v);
+                case "float":
+                case "double":
+                    return Double.parseDouble(v);
+                case "string":
+                    return v;
+                case "bool":
+                case "boolean":
+                    return Boolean.parseBoolean(v);
+                default:
+                    // 4) 실패/미지원 타입은 에러 메시지 출력 후 null 반환
+                    System.out.println("지원하지 않는 타입: " + typeName);
+                    return null;
+            }
+        } catch (Exception e) {
+            System.out.println("형변환 실패(" + typeName + ", \"" + raw + "\"): " + e.getMessage());
+            return null;
+        }
     }
 
     // ===== [TODO 3] if: 조건 true/false에 따라 블록 실행 =====
     public void ifCond(String cond) {
-        // TODO:
         // 조건식에 대한 결과를 확인하는 evalCondition(cond) 함수 활용
-        // evalCondition(cond) 함수의 판단 결과에 따라 if 구문의 true 혹은 false 실행
+        if (evalCondition(cond)) {
+            block_if_true();
+        } else {
+            block_if_false();
+        }
     }
 
     // ===== [TODO 4] while: 조건 true면 while 블록 반복, false면 종료 블록 =====
     public void whileCond(String cond) {
-        // TODO:
         // 1) 조건문에서 증가시켜야하는 변수를 찾아내는 extractCondVariable(cond) 함수 활용
-        // 정해진 횟수만큼 block_while_true(String) 함수 실행
+        String varName = extractCondVariable(cond);
+
+        // 증가 대상이 없으면 무한루프 방지: 참이면 1회만 실행 후 종료
+        if (varName == null) {
+            if (evalCondition(cond)) {
+                block_while_true(null);
+            }
+            block_while_false();
+            return;
+        }
+
+        // 정해진 조건이 참인 동안 반복
+        while (evalCondition(cond)) {
+            block_while_true(varName); // 내부에서 varName을 +1
+        }
+        block_while_false();
     }
 
     // ===== [제공] 블록 함수들(수정 금지) =====
@@ -133,7 +168,7 @@ public class HW01 {
 
     // ===== 메인: 완성 동작 데모(수정 불필요) =====
     public static void main(String[] args) {
-        Eval e = new Eval();
+        HW01 e = new HW01();
 
         // print
         e.print("=== print ===\n");

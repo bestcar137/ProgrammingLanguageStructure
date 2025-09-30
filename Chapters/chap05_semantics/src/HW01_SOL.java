@@ -10,35 +10,75 @@ public class HW01_SOL {
     // ===== [TODO 1] print: 그대로 출력 =====
     public void print(String msg) {
         // msg를 출력하는 구문 작성
+        System.out.print(msg);
     }
 
     // ===== [TODO 2] assign: 문자열 타입명으로 강제 변환 후 반환 =====
     // typeName: "int" | "float" | "string" | "bool" (대소문자 무시)
     public Object assign(String typeName, String raw) {
-        // TODO:
-        // 1) typeName을 소문자로 정리
-        // 2) raw(문자열)에서 공백 제거
-        // 3) switch 또는 if로 분기하여 각 타입으로 변환
-        //    - "int"   -> Integer.parseInt(v)
-        //    - "float" -> Double.parseDouble(v)
-        //    - "string"-> v
-        //    - "bool"/"boolean" -> Boolean.parseBoolean(v)
-        // 4) 실패/미지원 타입은 에러 메시지 출력 후 null 반환
-        return null;
+        if (typeName == null || raw == null) {
+            System.out.println("assign 실패: null 인자");
+            return null;
+        }
+        String t = typeName.trim().toLowerCase();
+        String v = raw.trim();
+
+        // 문자열에 따옴표가 감싸져 있으면 제거
+        if ((t.equals("string") || t.equals("str"))
+                && v.length() >= 2
+                && ((v.startsWith("\"") && v.endsWith("\"")) || (v.startsWith("'") && v.endsWith("'")))) {
+            v = v.substring(1, v.length() - 1);
+        }
+
+        try {
+            switch (t) {
+                case "int":
+                case "integer":
+                    return Integer.parseInt(v);
+                case "float":
+                case "double":
+                    return Double.parseDouble(v);
+                case "string":
+                case "str":
+                    return v;
+                case "bool":
+                case "boolean": {
+                    String vv = v.toLowerCase();
+                    if (vv.equals("1")) return true;
+                    if (vv.equals("0")) return false;
+                    return Boolean.parseBoolean(vv);
+                }
+                default:
+                    System.out.println("지원하지 않는 타입: " + typeName);
+                    return null;
+            }
+        } catch (Exception e) {
+            System.out.println("assign 변환 실패(" + typeName + ", " + raw + "): " + e.getMessage());
+            return null;
+        }
     }
 
     // ===== [TODO 3] if: 조건 true/false에 따라 블록 실행 =====
     public void ifCond(String cond) {
-        // TODO:
         // 조건식에 대한 결과를 확인하는 evalCondition(cond) 함수 활용
-        // evalCondition(cond) 함수의 판단 결과에 따라 if 구문의 true 혹은 false 실행
+        if (evalCondition(cond)) {
+            block_if_true();
+        } else {
+            block_if_false();
+        }
     }
 
     // ===== [TODO 4] while: 조건 true면 while 블록 반복, false면 종료 블록 =====
     public void whileCond(String cond) {
-        // TODO:
         // 1) 조건문에서 증가시켜야하는 변수를 찾아내는 extractCondVariable(cond) 함수 활용
-        // 정해진 횟수만큼 block_while_true(String) 함수 실행
+        String varName = extractCondVariable(cond);
+
+        // 조건이 참인 동안 반복: 매회 while 블록 실행(+ 내부에서 varName 증가)
+        while (evalCondition(cond)) {
+            block_while_true(varName);
+        }
+        // 거짓이 되는 순간 1회 종료 블록 실행
+        block_while_false();
     }
 
     // ===== [제공] 블록 함수들(수정 금지) =====
@@ -133,7 +173,7 @@ public class HW01_SOL {
 
     // ===== 메인: 완성 동작 데모(수정 불필요) =====
     public static void main(String[] args) {
-        Eval e = new Eval();
+        HW01_SOL e = new HW01_SOL();
 
         // print
         e.print("=== print ===\n");
