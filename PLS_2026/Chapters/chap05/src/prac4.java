@@ -1,5 +1,5 @@
 
-public class Main {
+public class prac4 {
     static int x = 10;
 
     public static int func() {
