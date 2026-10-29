@@ -1,0 +1,10 @@
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Python.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Programming_Language_Structures_chap04_prac09.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Programming_Language_Structures_chap04_prac08.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Programming_Language_Structures_chap04_prac02-04.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Programming_Language_Structures_chap04_prac_p23.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Programming_Language_Structures_chap04_prac_p33.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/Programming_Language_Structures_chap04_prac_p36.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/PLS_2026_Chapters_chap05_prac01.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/edit_cache.dir
+/home/bestcar137/CLionProjects/ProgrammingLanguageStructure/cmake-build-wsl/CMakeFiles/rebuild_cache.dir

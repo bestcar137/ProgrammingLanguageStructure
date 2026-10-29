@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/Programming_Language_Structures_chap04_prac_p33.dir/link.d CMakeFiles/Programming_Language_Structures_chap04_prac_p33.dir/PLS_2026/Chapters/chap04/prac_p33.cpp.o -o Programming_Language_Structures_chap04_prac_p33

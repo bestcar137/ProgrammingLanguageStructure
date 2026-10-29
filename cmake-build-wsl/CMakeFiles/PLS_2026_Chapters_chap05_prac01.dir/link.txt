@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -Wl,--dependency-file=CMakeFiles/PLS_2026_Chapters_chap05_prac01.dir/link.d CMakeFiles/PLS_2026_Chapters_chap05_prac01.dir/PLS_2026/Chapters/chap05/prac01.c.o -o PLS_2026_Chapters_chap05_prac01

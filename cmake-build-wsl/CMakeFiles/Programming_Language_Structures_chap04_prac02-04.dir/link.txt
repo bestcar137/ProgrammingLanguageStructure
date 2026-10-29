@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -Wl,--dependency-file=CMakeFiles/Programming_Language_Structures_chap04_prac02-04.dir/link.d "CMakeFiles/Programming_Language_Structures_chap04_prac02-04.dir/PLS_2026/Chapters/chap04/prac01-03.c.o" -o Programming_Language_Structures_chap04_prac02-04

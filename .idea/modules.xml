@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ProgrammingLanguageStructure.iml" filepath="$PROJECT_DIR$/ProgrammingLanguageStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProgrammingLanguageStructure2.iml" filepath="$PROJECT_DIR$/.idea/ProgrammingLanguageStructure2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProgrammingLanguageStructure3.iml" filepath="$PROJECT_DIR$/.idea/ProgrammingLanguageStructure3.iml" />
       <module fileurl="file://$PROJECT_DIR$/PLS_2025/Chapters/chap01_introduction/chap01_introduction.iml" filepath="$PROJECT_DIR$/PLS_2025/Chapters/chap01_introduction/chap01_introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/PLS_2025/Chapters/chap02_grammar/chap02_grammar.iml" filepath="$PROJECT_DIR$/PLS_2025/Chapters/chap02_grammar/chap02_grammar.iml" />
       <module fileurl="file://$PROJECT_DIR$/PLS_2025/Chapters/chap03_parsing/chap03_parsing.iml" filepath="$PROJECT_DIR$/PLS_2025/Chapters/chap03_parsing/chap03_parsing.iml" />
