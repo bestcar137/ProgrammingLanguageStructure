@@ -50,3 +50,8 @@ add_exercise(chap05 prac9_if prac09/prac9_if.c)
 
 add_exercise(chap05 prac10_prac10_C_if prac10/prac10_C_if.c)
 add_exercise(chap05 prac10_prac10_C_switch_case prac10/prac10_C_switch_case.c)
+
+# 6장
+add_exercise(chap06 prac01 prac01/prac01.c)
+add_exercise(chap06 prac02 prac02/prac02.c)
+add_exercise(chap06 prac03 prac03/prac03.c)
