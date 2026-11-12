@@ -18,13 +18,13 @@ function(add_exercise chapter target source)
 endfunction()
 
 # 4장
-add_exercise(chap04 prac01_03 prac01-03.c)
-add_exercise(chap04 prac08 prac08.c)
-add_exercise(chap04 prac09 prac09.c)
-add_exercise(chap04 prac_p23 prac_p23.c)
-add_exercise(chap04 prac_p33 prac_p33.cpp)
-add_exercise(chap04 prac_p34 prac_p34.cpp)
-add_exercise(chap04 prac_p36 prac_p36.cpp)
+add_exercise(chap04 prac01_03 prac01-03/prac01-03.c)
+add_exercise(chap04 prac08 prac08/prac08.c)
+add_exercise(chap04 prac09 prac09/prac09.c)
+add_exercise(chap04 prac_p23 prac_p23/prac_p23.c)
+add_exercise(chap04 prac_p33 prac_p33/prac_p33.cpp)
+add_exercise(chap04 prac_p34 prac_p34/prac_p34.cpp)
+add_exercise(chap04 prac_p36 prac_p36/prac_p36.cpp)
 
 # 5장
 add_exercise(chap05 prac01 prac01/prac01.c)
