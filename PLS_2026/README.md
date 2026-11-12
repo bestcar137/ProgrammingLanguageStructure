@@ -20,7 +20,7 @@ PLS_2026/
 | [chap03](Chapters/chap03/README.md) | 선언·대입·입출력·조건문·반복문 실습             |
 | [chap04](Chapters/chap04/README.md) | C, C++, Python, Pascal, Java의 변수와 영역 비교 |
 | [chap05](Chapters/chap05/README.md) | 실습 번호별 제어문 예제와 빌드 구성             |
-| [chap06](Chapters/chap06/README.md) | 정수 표현과 형변환 실습 및 빌드 방법 |
+| [chap06](Chapters/chap06/README.md) | 정수 표현과 형변환 실습 및 빌드 방법            |
 
 2026-10-29의 `94961e2` 커밋에서 기존 `Programming_Language_Structures`의 실습이 현재 `PLS_2026/Chapters` 경로로 통합되었다. 2026-11-05의
 `e3b2dd8`에서는 5장 파일을 실습 번호별 폴더로 정리했다. 각 README는 커밋 메시지와 현재 소스를 대조하여 작성했다.
