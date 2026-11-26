@@ -65,3 +65,8 @@ add_exercise(chap06 prac14_prac14 prac14/prac14.c)
 add_exercise(chap06 prac15_prac15 prac15/prac15.cpp)
 add_exercise(chap06 prac15_prac15_1 prac15/prac15_1.cpp)
 add_exercise(chap06 prac16_prac16 prac16/prac16.c)
+
+# 7장
+add_exercise(chap07 prac01 prac01/prac01.cpp)
+add_exercise(chap07 prac02 prac02/prac02.c)
+add_exercise(chap07 prac03 prac03/prac03.c)
